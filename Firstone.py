@@ -17,7 +17,7 @@ st.dataframe(Cafes[st.multiselect("Columns to display",col_names, default = col_
 ###Plotting
 st.write("# Plotting")
 ##display figures
-fig,ax = plt.subplots() #must create a subplot
+'''fig,ax = plt.subplots() #must create a subplot
 ax = sns.countplot(Cafes["Rating"], palette ="tab20")
 sns.despine()
 st.pyplot(ax)
@@ -59,7 +59,7 @@ res = []
 [res.append(x) for x in p if x not in res]
 st.markdown('**__The twelve nearest cafes are__**')
 for ik in range(1,13):
-	st.write(res[ik])
+	st.write(res[ik])'''
 
 # Streamlit widgets automatically run the script from top to bottom. Since
 # this button is not connected to any other logic, it just causes a plain
