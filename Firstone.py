@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import seaborn as sns
-import matplotlib.pyplot as plt
 
 Cafes=pd.read_csv("Data Test - Sheet1.csv")
 st.title("Least travelled cafes")
@@ -14,13 +13,6 @@ st.write("# Displaying Data")
 #add column selector
 col_names = Cafes.columns.tolist()
 st.dataframe(Cafes[st.multiselect("Columns to display",col_names, default = col_names)])
-###Plotting
-st.write("# Plotting")
-##display figures
-fig,ax = plt.subplots() #must create a subplot
-ax = sns.countplot(Cafes["Rating"], palette ="tab20")
-sns.despine()
-st.pyplot(fig)
 from math import radians, cos, sin, asin, sqrt
 def distance(lat1, lat2, lon1, lon2):
     # The math module contains a function named
