@@ -2,5 +2,4 @@ streamlit
 pandas
 seaborn
 numpy
-matplotlib.pyplot
-math
+matplotlib.pyplot==3.3.4
