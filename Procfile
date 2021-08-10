@@ -1,1 +1,1 @@
-web:sh setup.sh && streamlit run Firstone.py
+web: streamlit run --server.enableCORS false --server.port $PORT Firstone.py
