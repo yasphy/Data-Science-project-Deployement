@@ -20,7 +20,7 @@ st.write("# Plotting")
 fig,ax = plt.subplots() #must create a subplot
 ax = sns.countplot(Cafes["Rating"], palette ="tab20")
 sns.despine()
-st.pyplot(ax)
+st.pyplot(fig)
 import math
 def distance(lat1, lat2, lon1, lon2):
     # The math module contains a function named
