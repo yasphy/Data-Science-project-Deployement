@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
-Cafes=pd.read_csv("Data Test - Sheet1.csv")
+Cafes=pd.read_csv("https://raw.githubusercontent.com/yasphy/data/main/Data Test - Sheet1.csv")
 st.title("Least travelled cafes")
 st.image("https://media-cdn.tripadvisor.com/media/photo-s/15/ba/b1/f4/2-18-largejpg.jpg")
 st.write("Given you chose a cafe from given cafe list, you can get 12 nearest cafes")
