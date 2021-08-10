@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 Cafes=pd.read_csv("https://raw.githubusercontent.com/yasphy/data/main/Data Test - Sheet1.csv")
 st.title("Least travelled cafes")
