@@ -21,6 +21,7 @@ fig,ax = plt.subplots() #must create a subplot
 ax = sns.countplot(Cafes["Rating"], palette ="tab20")
 sns.despine()
 st.pyplot(fig)
+st.map(Cafes)
 from math import radians,sin,cos,asin,sqrt
 def distance(lat1, lat2, lon1, lon2):
     # The math module contains a function named
@@ -43,17 +44,19 @@ def distance(lat1, lat2, lon1, lon2):
     # calculate the result
     return(c * r)
 
-option=st.selectbox('Choose company',Cafes['Company Name'])
-i=Cafes.loc[(Cafes['Company Name']==option)].index
+#option=st.selectbox('Choose company',Cafes['Company Name'])
+#i=Cafes.loc[(Cafes['Company Name']==option)].index
+lat=st.number_input('Enter your latitude')
+long=st.number_input('Enter your longitude')
 k=[]
-for m in range(0,339):
+for m in range(0,340):
     if (m!=i[0]):
-        k.append(distance(Cafes["Latitude"][m],Cafes["Latitude"][i[0]],Cafes["Longitude"][m],Cafes["Longitude"][i[0]]))
+        k.append(distance(Cafes["Latitude"][m],lat,Cafes["Longitude"][m],long))
 k.sort()
 p=[]
-for w in range(0,339):
+for w in range(0,340):
     for q in range(0,13):
-        if (k[q]==distance(Cafes["Latitude"][w],Cafes["Latitude"][i[0]],Cafes["Longitude"][w],Cafes["Longitude"][i[0]])):
+        if (k[q]==distance(Cafes["Latitude"][w],lat,Cafes["Longitude"][w],long)):
             p.append(Cafes["Company Name"][w])
 res = []
 [res.append(x) for x in p if x not in res]
