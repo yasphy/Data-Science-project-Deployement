@@ -57,9 +57,13 @@ for w in range(0,339):
             p.append(Cafes["Company Name"][w])
 res = []
 [res.append(x) for x in p if x not in res]
-st.markdown('**__The twelve nearest cafes are__**')
-for ik in range(1,len(res)):
-	st.write(res[ik])
+st.markdown('**__The twelve nearest cafes and salons are__**')
+if (len(res)>13):
+	for ik in range(1,13):
+		st.write(res[ik])
+else:	
+	for ik in range(1,len(res)):
+		st.write(res[ik])
 
 # Streamlit widgets automatically run the script from top to bottom. Since
 # this button is not connected to any other logic, it just causes a plain
