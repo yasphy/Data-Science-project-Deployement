@@ -51,12 +51,12 @@ long=st.number_input('Enter your longitude')
 k=[]
 for m in range(0,340):
     #if (m!=i[0]):
-        k.append(distance(Cafes["Latitude"][m],lat,Cafes["Longitude"][m],long))
+        k.append(distance(Cafes["latitude"][m],lat,Cafes["longitude"][m],long))
 k.sort()
 p=[]
 for w in range(0,340):
     for q in range(0,13):
-        if (k[q]==distance(Cafes["Latitude"][w],lat,Cafes["Longitude"][w],long)):
+        if (k[q]==distance(Cafes["latitude"][w],lat,Cafes["longitude"][w],long)):
             p.append(Cafes["Company Name"][w])
 res = []
 [res.append(x) for x in p if x not in res]
