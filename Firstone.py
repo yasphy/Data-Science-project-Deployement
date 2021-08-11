@@ -50,7 +50,7 @@ lat=st.number_input('Enter your latitude')
 long=st.number_input('Enter your longitude')
 k=[]
 for m in range(0,340):
-    if (m!=i[0]):
+    #if (m!=i[0]):
         k.append(distance(Cafes["Latitude"][m],lat,Cafes["Longitude"][m],long))
 k.sort()
 p=[]
