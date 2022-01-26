@@ -1,13 +1,14 @@
 # Data-Science-project-Deployement
-Using Streamlit
+* Using Streamlit
 
 
-For installing streamlink on your system,you can use pip or conda if they are preinstalled
+* For installing streamlink on your system,you can use pip or conda if they are preinstalled
 
-Using pip--pip install streamlit
+* Using pip--pip install streamlit
 
-Using conda--conda install streamlit
+* Using conda--conda install streamlit
 
-Note:The app can only be run using command line and requires.py extension only
+* Note:The app can only be run using command line and requires.py extension only
 
-App url:https://implementingds.herokuapp.com/
+* App url:https://implementingds.herokuapp.com/
+## Its my first project and I learnt a lot from it
