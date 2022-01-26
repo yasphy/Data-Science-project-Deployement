@@ -8,8 +8,6 @@
 
 * Using conda--conda install streamlit
 
-* Note:The app can only be run using command line and requires.py extension only
-
 * [App url](https://implementingds.herokuapp.com/)
 ## The Basic EDA
 ![](https://github.com/yasphy/Data-Science-project-Deployement/blob/main/images/Firstone%20OP.png)
